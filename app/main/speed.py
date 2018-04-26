@@ -1,4 +1,4 @@
-import pyspeedtest
+import pyspeedtest 
 st = pyspeedtest.SpeedTest()
 ping = st.ping()
 download = st.download()
