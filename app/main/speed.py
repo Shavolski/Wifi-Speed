@@ -1,9 +1,9 @@
 import pyspeedtest
 st = pyspeedtest.SpeedTest()
 ping = st.ping()
-download = st.download()
+downloaded = st.download()
 upload = st.upload()
 
 print('ping: ' + str(ping))
-print('download: ' + str(download))
+print('downloaded: ' + str(downloaded))
 print('upload: ' + str(upload))
