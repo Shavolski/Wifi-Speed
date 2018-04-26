@@ -18,10 +18,9 @@ def speedtest():
     '''
     View function to speedtest
     '''
-    title = "Test Your Speed"
     st = pyspeedtest.SpeedTest()
     ping = st.ping()
     downloaded = st.download()
     upload = st.upload()
 
-    return render_template('speedtest.html', title=title, ping=ping, downloaded=downloaded, upload=upload)
+    return render_template('speedtest.html', ping=ping, downloaded=downloaded, upload=upload)
