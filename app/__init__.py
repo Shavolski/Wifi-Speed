@@ -2,7 +2,9 @@
 from flask import Flask
 from config import config_options
 from flask_bootstrap import Bootstrap
+from app.main import speed
 
+# ping = ping
 
 bootstrap = Bootstrap()
 
@@ -10,7 +12,7 @@ def create_app(config_state):
     app = Flask(__name__)
     app.config.from_object(config_options[config_state])
 
-
+    # ping.init_app(app)
     bootstrap.init_app(app)
 
     from .main import main as main_blueprint
