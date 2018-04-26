@@ -9,11 +9,10 @@ def index():
     View root page function that returns the index page
     '''
     title = 'Home'
-    print()
     return render_template('index.html', title=title)
 
 
-@main.route('/speedtest/', methods=['GET', 'POST'])
+@main.route('/speedtest', methods=['GET', 'POST'])
 def speedtest():
     '''
     View function to speedtest

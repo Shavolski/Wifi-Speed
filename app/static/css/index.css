@@ -1,16 +1,14 @@
 h1{
     text-align: center;
 }
-body{
-    background-color:black;
-}
+
 * {
     margin: 0;
     padding: 0;
   }
   
   body {
-    background: #0A122A;
+    background-color:#0A122A ;
   }
   
   /* Let's style the wrapper in such away that, 
@@ -21,6 +19,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 550px;
+    margin-top:100px;
   }
   
   /* Style the Un-order list by setting its list-style to none */
@@ -39,7 +38,7 @@ body{
     text-align: center;
     cursor: pointer;
     border-radius: 50%;
-    border: 5px solid #D8E2DC;
+    border: 5px solid white;
     float: left;
     transition: all 0.5s ease;
   }
@@ -47,7 +46,7 @@ body{
   /* Style the icons by setting its color and margin-top value to 20px 
   to align it properly */
   .wrapper ul li .fa {
-    color: #D8E2DC;
+    color: white;
     margin-top: 20px;
     transition: all 0.5s ease;
   }
@@ -146,4 +145,29 @@ body{
         margin-left: 15px;
     }
   }
+  .register-button {  
+      border: 6px solid transparent;
+      border-image: linear-gradient(to right, #3b5998  0%,   #3b5998 100%);
+      border-image-slice: 1;
+    
+      background:#0A122A ;
+      color: white;
+      font-size: 2em;
+      padding: 10px 40px;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-left:550px;
+      margin-top:120px;
+      transition-duration: 2s;
+      cursor: pointer;
+  }
+  
+  .register-button:hover {
+      background-color:#3b5998;
+      background: linear-gradient(to right,#0A122A);
+      color: #fff;
+      transition-duration: 0.9s;
+  }
+  
   
