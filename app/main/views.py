@@ -24,3 +24,6 @@ def speedtest():
     upload = st.upload()
 
     return render_template('speedtest.html', ping=ping, downloaded=downloaded, upload=upload)
+@main.route('/refresh',methods=['GET', 'POST'])
+def refresh():
+    return render_template('refresh.html')

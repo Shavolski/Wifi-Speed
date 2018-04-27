@@ -5,12 +5,14 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <meta http-equiv="X-UA-Compatible" content="ie=edge">
                 <link rel="stylesheet" href="../static/css/index.css"></link>
-                <link rel="stylesheet/less" type="text/css" href="../static/css/styles.less"></link>   
-                 <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+                <link rel="stylesheet/less" type="text/css" href="../static/css/styles.less"></link>  
+                <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+                <link rel="stylesheet" href="../static/css/animate.min.css">
+                <link rel="stylesheet" href="../static/css/animate.css">
                 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
                 <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.2/less.min.js" ></script>
         </head>
-        <body>
+        <body style="background-attachment: fixed;">
                 <svg id="loading" viewbox="0 0 100 80">
                         <defs>
                           <linearGradient id="gradient" x1="100%" y1="0%" x2="0%" y2="100%">
@@ -35,22 +37,27 @@
                         <rect id="container" transform="translate(50) scale(0.707, 0.707) rotate(45)" x="0" y="0" width="100" height="100" fill="url(#gradient)" clip-path="url(#rects)">
                         </rect>
                       </svg>
-                      <div class="container" style="padding:60px;">
-                      <a class="register-button" style="font-family: 'Gugi', cursive;" href="/speedtest">REFRESH</a>
+                      <div class="container">
+                      <h2 style="color:white;font-family: 'Gugi', cursive;font-size:60px;padding:30px;padding-left:90px;">LOADING . . .</h1>
                       </div>
-                      <div class="container-fluid">
-                      <div class="container1" style="padding: 50px;background-color: aquamarine; opacity:0.8; font-family: 'Gugi', cursive;margin-left:150px;margin-right:300px;">
+                      <div class="container">
+                      <div class="container" style="padding:60px;padding-left:15px;">
+                      <a class="register-button" style="font-family: 'Gugi', cursive;" href="/refresh">REFRESH</a>
+                      </div>
+                      <div class="container" style="text-align:center;margin-left:70px;margin-right:70px;margin-bottom:40px;">
+                      <div class="container-1" style="padding: 50px;background-color: aquamarine; opacity:0.8; font-family: 'Gugi', cursive;color:#0A122A;font-size:150%;">
                           <p> Ping </p>
-                          <p>{{ping}} mbs</p>
+                          <p>{{ping}} ms</p>
                       </div>
-                      <div class="container2" style="padding: 50px;background-color: aquamarine; opacity:0.8;font-family: 'Gugi', cursive;float:left;margin-left:150px;margin-right:300px;">
+                      <div class="container-1" style="padding: 50px;background-color: aquamarine; opacity:0.8;font-family: 'Gugi', cursive;color:#0A122A;font-size:150%;">
                           <p>Download</p>
-                          <p>{{downloaded}} mbps</p>
+                          <p> {{downloaded}} mbps</p>
                       </div>
-                      <div class="container3" style=" padding: 50px;background-color: aquamarine; opacity:0.8;font-family: 'Gugi', cursive;margin-left:150px;margin-right:300px;">
+                      <div class="container-1" style=" padding: 50px;background-color: aquamarine; opacity:0.8;font-family: 'Gugi', cursive;color:#0A122A;font-size:150%;">
                           <p>Upload</p>
-                          <p>{{upload}} mbps</p>
+                          <p> {{upload}} kbps</p>
                       </div>
                       </div>
-                    </body>
+                      </div>
+                    </body>              
                   </html>

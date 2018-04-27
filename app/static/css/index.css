@@ -147,11 +147,11 @@ h1{
   }
   .register-button {  
       border: 6px solid transparent;
-      border-image: linear-gradient(to right, #3b5998  0%,   #3b5998 100%);
+      border-image: linear-gradient(to right, #0A122A  0%,   #0A122A 100%);
       border-image-slice: 1;
     
       background:#0A122A ;
-      color: white;
+      color: #0A122A;;
       font-size: 2em;
       padding: 10px 40px;
       text-decoration: none;
@@ -167,7 +167,33 @@ h1{
       background-color:#3b5998;
       background: linear-gradient(to right,#0A122A);
       color: #fff;
-      transition-duration: 0.9s;
+      transition-duration: 0.3s;
   }
+
+@keyframes example {
+  0% {background-color: #0A122A;}
+  50% {background-color: #0A122A;}
+  100% {background-color:aquamarine;}
+}
+
+.container-1{
+  animation-name: example;
+  animation-duration:4s;
+}
+
+@keyframes mark {
+  O% {color: white;}
+  15%{color: white;}
+  20%{color: white;}
+  50% {color: white;}
+  70% {color: #0A122A;}
+  80%{color: #0A122A;}
+  100%{color: #0A122A;}
+}
+
+h2{
+  animation-name: mark;
+  animation-duration:4s;
+  text-align:center;
   
-  
+}

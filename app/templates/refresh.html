@@ -1,0 +1,251 @@
+<DOCTYPE>
+        <html>
+            <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                    <link rel="stylesheet" href="../static/css/index.css"></link>
+                    <link rel="stylesheet/less" type="text/css" href="../static/css/styles.less"></link>  
+                    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+                    <link rel="stylesheet" href="../static/css/animate.min.css">
+                    <link rel="stylesheet" href="../static/css/animate.css">
+                    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+                    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.2/less.min.js" ></script>
+            </head>
+            <body style="background-attachment: fixed;">
+                    <svg id="loading" viewbox="0 0 100 80">
+                            <defs>
+                              <linearGradient id="gradient" x1="100%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" stop-color="#4383b8" />
+                                <stop offset="100%" stop-color="#4aa06c" />
+                              </linearGradient>
+                              
+                              <clipPath id="rects">
+                                <rect class="rect" id="rect1" x="0" y="0" width="30" height="30" rx="2" ry="2" />
+                                <rect class="rect" id="rect2" x="0" y="0" width="30" height="30" rx="2" ry="2" />
+                                <rect class="rect" id="rect3" x="0" y="0" width="30" height="30" rx="2" ry="2" />
+                                <rect class="rect" id="rect4" x="0" y="0" width="30" height="30" rx="2" ry="2" />
+                                <rect class="rect" id="rect5" x="0" y="0" width="30" height="30" rx="2" ry="2" />
+                                <rect class="rect" id="rect6" x="0" y="0" width="30" height="30" rx="2" ry="2" />
+                                <rect class="rect" id="rect7" x="0" y="0" width="30" height="30" rx="2" ry="2" />
+                              </clipPath>
+                            </defs>
+                            <!-- 
+                              (100 / sqrt(2 * 30^2)) == 0.707. 
+                              Used pythagorean principle to scale the rectangles to fit within a 100x100 viewport 
+                            --> 
+                            <rect id="container" transform="translate(50) scale(0.707, 0.707) rotate(45)" x="0" y="0" width="100" height="100" fill="url(#gradient)" clip-path="url(#rects)">
+                            </rect>
+                          </svg>
+                          <div class="container">
+                          <h2 style="color:white;font-family: 'Gugi', cursive;font-size:60px;padding:30px;padding-left:90px;">LOADING . . .</h1>
+                          </div>
+                          <div class="container">
+                          <div class="container" style="padding:60px;padding-left:15px;">
+                          </div>
+                          <div class="container" style="padding: 50px;background-color: aquamarine; opacity:0.8; font-family: 'Gugi', cursive;color:#0A122A;font-size:150%;">
+                              <h1 style="text-decoration: underline;">List Of Servers</h1>
+                          </div>
+                          <div class="container"style="padding: 50px;background-color: aquamarine; opacity:0.8; font-family: 'Gugi', cursive;color:#0A122A;font-size:150%;">
+                          <p>206) Comcast (Pittsburgh, PA, United States) [14622.50 km]
+                                14812) Verizon (Bridgeville, PA, United States) [14635.03 km]
+                                10163) CenturyLink, Inc (Rocky Mount, NC, United States) [14640.39 km]
+                                7085) Lumos Networks (Waynesboro, VA, United States) [14644.34 km]
+                                13104) Digital Connections (Morgantown, WV, United States) [14657.90 km]
+                                13903) GreenLight (Wilson, United States) [14659.13 km]
+                                5111) AT&T (Cleveland, OH, United States) [14694.91 km]
+                                10138) CenturyLink, Inc (Cleveland, OH, United States) [14694.91 km]
+                                11381) Bluesky Cook Islands (Rarotonga, Cook Islands) [14694.99 km]
+                                15062) Cleveland Broadband (Cleveland, OH, United States) [14695.82 km]
+                                13318) América Móvil Perú SAC (Trujillo, Peru) [14696.35 km]
+                                6039) Citynet (Bridgeport, WV, United States) [14696.57 km]
+                                15785) Sprint (Akron, OH, United States) [14704.70 km]
+                                4837) LightSpeed Technologies (Canton, OH, United States) [14708.27 km]
+                                5435) Suddenlink Communications LLC (Buckhannon, WV, United States) [14708.86 km]
+                                12838) FairlawnGig (Fairlawn, OH, United States) [14709.02 km]
+                                13085) AT&T (Raleigh, NC, United States) [14716.71 km]
+                                9816) Google Fiber (Raleigh, NC, United States) [14716.71 km]
+                                14734) celitoFiber (Raleigh, NC, United States) [14717.70 km]
+                                5746) MCTV (Massillon, OH, United States) [14719.57 km]
+                                7212) Star Communications (Clinton, NC, United States) [14721.30 km]
+                                5360) Tigo (Barranquilla, Colombia) [14721.55 km]
+                                15019) TigoUne (Barranquilla, Colombia) [14725.39 km]
+                                3673) Shentel Service Company (Weston, WV, United States) [14725.62 km]
+                                4185) Duke University (Durham, NC, United States) [14732.05 km]
+                                7552) ManagedWay Company (Troy, MI, United States) [14741.02 km]
+                                10300) Tbaytel (Thunder Bay, ON, Canada) [14746.58 km]
+                                14774) UNC Chapel Hill (Chapel Hill, NC, United States) [14747.55 km]
+                                6548) MNSi Telecom (Windsor, ON, Canada) [14747.59 km]
+                                5114) AT&T (Detroit, MI, United States) [14748.15 km]
+                                1778) Comcast (Detroit, MI, United States) [14748.15 km]
+                                1834) T-Mobile (Detroit, MI, United States) [14748.15 km]
+                                15044) 123.Net, Inc. (Southfield, MI, United States) [14752.63 km]
+                                6124) Merit Network, Inc (Southfield, MI, United States) [14753.87 km]
+                                14884) Verizon (Lodge, MI, United States) [14753.87 km]
+                                3648) University of Michigan-Flint (Flint, MI, United States) [14754.33 km]
+                                12054) Active Solutions Group (Dearborn, MI, United States) [14757.92 km]
+                                5656) Rowe Internet (Byesville, OH, United States) [14763.12 km]
+                                15950) Verizon (Roanoke, VA, United States) [14763.87 km]
+                                6995) PlazaRED Soluciones Integrales SAS (Ginebra, Colombia) [14766.39 km]
+                                8460) Rockman Communications (Fenton, MI, United States) [14767.98 km]
+                                6122) Merit Network, Inc (Marquette, MI, United States) [14769.86 km]
+                                3723) Shentel Service Company (Rocky Mount, VA, United States) [14771.72 km]
+                                15668) Verizon (Westland, MI, United States) [14773.67 km]
+                                6346) Wayne RESA (Wayne, MI, United States) [14775.12 km]
+                                4528) COLI Inc. (Traverse City, MI, United States) [14777.31 km]
+                                10274) Summit Digital (McBain, MI, United States) [14786.68 km]
+                                3798) Daystarr Communications (Owosso, MI, United States) [14789.03 km]
+                                3767) Claro (Cartagena, Colombia) [14793.32 km]
+                                1062) Winn Telecom (Mount Pleasant, MI, United States) [14793.49 km]
+                                 735) CMS Internet (Mount Pleasant, MI, United States) [14793.49 km]
+                                3161) Emcali (Cali, Colombia) [14798.13 km]
+                                6705) Dobleclick Software e Ingeneria (Cali, Colombia) [14798.13 km]
+                                6869) Colombiatel (Cali, Colombia) [14798.13 km]
+                                9063) ERT (Cali, Colombia) [14798.13 km]
+                                5207) REMC1 (Houghton, MI, United States) [14799.47 km]
+                                5359) Suddenlink Communications LLC (Parkersburg, WV, United States) [14799.62 km]
+                                12393) University of Michigan (Ann Arbor, MI, United States) [14800.70 km]
+                                5709) Merit Network, Inc (Ann Arbor, MI, United States) [14800.70 km]
+                                4999) Citizens Telephone Cooperative (Floyd, VA, United States) [14810.28 km]
+                                5061) Up.Net (Baraga, Mi, United States) [14819.76 km]
+                                1298) Amplex (Toledo, OH, United States) [14823.26 km]
+                                14929) Horry Telephone Cooperative, Inc. (Conway, SC, United States) [14826.89 km]
+                                6924) Spartan Net (East Lansing, MI, United States) [14830.18 km]
+                                1005) ACD.net (Lansing, MI, United States) [14830.18 km]
+                                 808) Casair, Inc (Stanton, MI, United States) [14833.26 km]
+                                12218) NeoNova (Ellerbe, NC, United States) [14840.86 km]
+                                5429) Suddenlink Communications LLC (Beckley, WV, United States) [14841.07 km]
+                                14348) WV Office of Technology (Charleston, WV, United States) [14849.77 km]
+                                15986) Spring Arbor University (Spring Arbor, MI, United States) [14862.83 km]
+                                7168) Time Warner Cable (Columbus, OH, United States) [14873.65 km]
+                                3119) RackSquared (Columbus, OH, United States) [14873.65 km]
+                                4874) BrescoBroadBand (Columbus, OH, United States) [14873.65 km]
+                                14813) Verizon (Columbus, OH, United States) [14873.65 km]
+                                17299) NETTplus (Loja, Ecuador) [14875.12 km]
+                                9461) Fibrant (Salisbury, NC, United States) [14876.37 km]
+                                8442) red CEDIA (Cuenca, Ecuador) [14892.75 km]
+                                6125) Merit Network, Inc (Grand Rapids, MI, United States) [14892.94 km]
+                                10548) Triton Technologies Inc (Grand Rapids, MI, United States) [14892.94 km]
+                                14595) OffsiteDataSync (Grand Rapids, MI, United States) [14893.15 km]
+                                1421) OTT Communications (War, WV, United States) [14903.45 km]
+                                2111) MEI.net (Delton, MI, United States) [14903.60 km]
+                                9736) Speedy (Ambato, Ecuador) [14903.69 km]
+                                3383) Continuum (Mooresville, NC, United States) [14908.12 km]
+                                12125) Wilkes Communications Incorporated (Wilkesboro, NC, United States) [14913.01 km]
+                                5516) CTS Telecom (Climax, MI, United States) [14914.25 km]
+                                6442) Securehosting Ltd. (Nassau, Bahamas) [14914.97 km]
+                                 731) BTC (Nassau, Bahamas) [14914.97 km]
+                                12944) GlobalNexus (Nassau, Bahamas) [14914.97 km]
+                                14017) Minford Telephone Company (Minford, OH, United States) [14920.28 km]
+                                11998) PUNTONET (Quito, Ecuador) [14922.51 km]
+                                1280) CNT EP. (Quito, Ecuador) [14922.51 km]
+                                10511) Iplanet (Quito, Ecuador) [14922.51 km]
+                                5028) AT&T (Charlotte, NC, United States) [14925.97 km]
+                                4211) Spirit Communications (Charlotte, NC, United States) [14925.97 km]
+                                1871) T-Mobile (Charlotte, NC, United States) [14925.97 km]
+                                15845) Verizon (Charlotte, NC, United States) [14925.97 km]
+                                3240) Secant Technologies (Kalamazoo, MI, United States) [14928.50 km]
+                                11406) Skyline SkyBest (West Jefferson, NC, United States) [14928.90 km]
+                                11878) CNI (Wapakoneta, OH, United States) [14929.34 km]
+                                5133) Home Telecom (Moncks Corner, SC, United States) [14933.68 km]
+                                5422) Suddenlink Communications LLC (Kermit, WV, United States) [14935.58 km]
+                                14723) FTC-i.net (Sumter, SC, United States) [14935.97 km]
+                                6116) HITSTECH (Conover, NC, United States) [14936.85 km]
+                                9779) Lycom Communications (Louisa, KY, United States) [14937.46 km]
+                                6806) Farmers Telephone Cooperative, Inc. (Sumter, SC, United States) [14937.62 km]
+                                14260) Flow Jamaica (Kingston, Jamaica) [14945.61 km]
+                                5309) Nsight (Green Bay, WI, United States) [14947.02 km]
+                                1576) Digicel Jamaica (Kingston, Jamaica) [14947.35 km]
+                                9318) Caricel (Kingston, Jamaica) [14947.35 km]
+                                6178) MVECA (Yellow Springs, OH, United States) [14949.71 km]
+                                7035) Midco (International Falls, MN, United States) [14950.34 km]
+                                14084) Mercury Network (Manitowoc, WI, United States) [14952.63 km]
+                                4816) Comporium Communications (Rock Hill, SC, United States) [14953.45 km]
+                                12910) ITMNETWORKS (Lenoir, NC, United States) [14953.97 km]
+                                1443) Inter Mountain Cable (Harold, KY, United States) [14966.13 km]
+                                3362) Appalachian Wireless (Ivel, KY, United States) [14968.18 km]
+                                14230) Frontier (Fort Wayne, IN, United States) [14968.74 km]
+                                5898) Foothills Broadband (Staffordsville, KY, United States) [14970.25 km]
+                                11777) KPU Telecom / City of Ketchikan (Ketchikan, AK, United States) [14973.74 km]
+                                4221) MDECA (Dayton, OH, United States) [14973.82 km]
+                                5005) BVU Authority (Bristol, VA, United States) [14975.18 km]
+                                15380) TruVista (Chester, SC, United States) [14978.84 km]
+                                8265) Midwest Connections (Cassopolis, MI, United States) [14980.76 km]
+                                4265) Spirit Communications (Columbia, SC, United States) [14993.36 km]
+                                10139) CenturyLink, Inc (Columbia, SC, United States) [14993.36 km]
+                                11679) Palmetto Rural Telephone Cooperative (Walterboro, SC, United States) [15003.24 km]
+                                5408) Thacker-Grigsby Telephone Co. Inc. (Hindman, KY, United States) [15005.37 km]
+                                6680) Claro Fijo (Guayaquil, Ecuador) [15008.55 km]
+                                1140) Telconet (Guayaquil, Ecuador) [15008.55 km]
+                                4970) CNT EP. (Guayaquil, Ecuador) [15008.55 km]
+                                14162) University of Notre Dame (Notre Dame, IN, United States) [15009.42 km]
+                                15775) CarolinaConnect (Lexington, SC, United States) [15010.63 km]
+                                5640) HostColor LLC (South Bend, IN, United States) [15012.31 km]
+                                16770) Fourway.NET (South Bend, IN, US) [15012.31 km]
+                                13983) MHT (Winnipeg, MB, Canada) [15016.75 km]
+                                6303) CONECEL (Guayas, Ecuador) [15016.85 km]
+                                14805) Verizon (Lewis Center, OH, United States) [15017.52 km]
+                                4244) Shaw Communications (Winnipeg, MB, Canada) [15018.30 km]
+                                6394) VOI Network Solutions (Winnipeg, MB, Canada) [15018.30 km]
+                                4297) LES.NET (Winnipeg, MB, Canada) [15018.30 km]
+                                9015) Bell MTS (Winnipeg, MB, Canada) [15018.30 km]
+                                1493) Voyageur Internet (Winnipeg, MB, Canada) [15018.30 km]
+                                15936) Full Throttle Networks (Winnipeg, MB, Canada) [15018.30 km]
+                                7290) Fastnet Communications (Winnipeg, MB, Canada) [15018.30 km]
+                                3077) Commstream Communications (Winnipeg, MB, Canada) [15018.30 km]
+                                17395) Bell Mobility (Winnipeg, MB, Canada) [15018.30 km]
+                                5973) Sunset Digital Communications (Duffield, VA, United States) [15020.36 km]
+                                11355) Norvado (Cable, WI, United States) [15022.88 km]
+                                3625) Paul Bunyan Communications (Duluth, MN, United States) [15024.60 km]
+                                10144) CenturyLink, Inc (Duluth, MN, United States) [15024.60 km]
+                                3128) Beyond Hosting LLC (Cincinnati, OH, United States) [15025.94 km]
+                                7071) Miami University of Ohio (Oxford, OH, United States) [15028.83 km]
+                                10229) Swift High Speed.com (Steinbach, MB, Canada) [15028.85 km]
+                                2555) Eastlink (Grande Prairie, AB, Canada) [15030.36 km]
+                                 789) Ethoplex (Germantown, WI, United States) [15039.79 km]
+                                8463) Netwurx (Milwaukee, WI, United States) [15040.03 km]
+                                6041) 5NINES, LLC (Milwaukee, WI, United States) [15040.03 km]
+                                17462) CyberLynk Network (Milwaukee, WI, United States) [15040.03 km]
+                                17296) St. Thomas More High School (Milwaukee, WI, United States) [15040.03 km]
+                                15778) Sprint (Fairfax, SC, United States) [15051.11 km]
+                                14480) Bloomip (Asheville, NC, United States) [15052.38 km]
+                                5591) ERC Broadband (Asheville, NC, United States) [15053.42 km]
+                                6096) SkyRunner Inc (Asheville, NC, United States) [15053.42 km]
+                                15030) Verizon (New Berlin, WI, United States) [15055.26 km]
+                                5520) Piedmont Rural Telephone Coop. (Laurens, SC, United States) [15055.79 km]
+                                5561) Morris Broadband, LLC (Hendersonville, NC, United States) [15057.27 km]
+                                9650) Renaissance Learning, Inc. (Wisconsin Rapids, WI, United States) [15068.33 km]
+                                2080) Solarus (Wisconsin Rapids, WI, United States) [15068.33 km]
+                                1772) Comcast (Augusta, GA, United States) [15068.45 km]
+                                2441) hsyns.net.ec (Babahoyo, Ecuador) [15074.95 km]
+                                6998) Peoples Rural Telephone Coop. (Mckee, KY, United States) [15080.80 km]
+                                 897) MUS FiberNET (Morristown, TN, United States) [15084.59 km]
+                                15932) Planters Telephone Cooperative (Newington, GA, United States) [15088.79 km]
+                                4309) Mikrotec Internet Services (Lexington, KY, United States) [15089.03 km]
+                                4681) QX.NET (Lexington, KY, United States) [15089.03 km]
+                                5063) Community High School District 128 (Libertyville, IL, United States) [15090.51 km]
+                                14228) Frontier (Chicago, IL, United States) [15094.13 km]
+                                14489) QTS Data Centers (Chicago, IL, United States) [15094.14 km]
+                                4443) CityWest Cable and Telephone (Terrace, BC, Canada) [15096.49 km]
+                                7104) Northwestern Indiana Telephone (Hebron, IN, United States) [15099.57 km]
+                                6015) West Carolina (Abbeville, SC, United States) [15100.11 km]
+                                1776) Comcast (Chicago, IL, United States) [15100.49 km]
+                                10670) Speedtest.net (Chicago, IL, United States) [15100.49 km]
+                                2574) ServerCentral (Chicago, IL, United States) [15100.49 km]
+                                7467) The Fusion Network (Chicago, IL, United States) [15100.49 km]
+                                11750) fdcservers.net (Chicago, IL, United States) [15100.49 km]
+                                10050) Comcast (Chicago, IL, United States) [15100.49 km]
+                                5919) tzulo, inc (Chicago, IL, United States) [15100.49 km]
+                                7193) Sharktech Inc. (Chicago, IL, United States) [15100.49 km]
+                                15912) XenSpec (Chicago, IL, United States) [15100.49 km]
+                                10135) CenturyLink, Inc (Chicago, IL, United States) [15100.49 km]
+                                12012) Sprint (Chicago, IL, United States) [15100.49 km]
+                                10923) Speedtest.net (Chicago, IL, United States) [15100.49 km]
+                                17311) Xiber LLC (Chicago, IL, United States) [15100.49 km]
+                                15809) OkServers LLC (Chicago, IL, United States) [15100.49 km]
+                                16681) CCleaner (Chicago, United States) [15100.49 km]
+                                12113) Barbourville Utility Commission (Barbourville, KY, United States) [15100.71 km]</p>
+                                </div>
+                          </div>
+                        </body>              
+                      </html>
